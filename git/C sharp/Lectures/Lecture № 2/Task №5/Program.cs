@@ -48,30 +48,4 @@ int pos = IndexOf(array, 4);//ищем 4 меняется значение(Мо�
 Console.WriteLine(pos);
 
 /*
-
-
-}
-int IndexOf(int[] colle, int find)
-{ 
-    int count = colle.Length;
-    int index = 0; 
-    int position = -1;//убираем элемен/-1 элемент не найден!
-    while (index<count)
-    {
-        if(colle[index] == find)
-        {
-            position = index;
-            break;
-        }
-        index++;
-    }
-}    retern position;
-int[] array = new int[10];// Масив 
-//тестируем масив
-FillArraay(arry);
-PrintArry(arry);
-
-Console.WriteLine();
-int pos = IndexOf(arry, 4); //ищем 4 меняется значение 
-Console.WriteLine(pos);
 */
