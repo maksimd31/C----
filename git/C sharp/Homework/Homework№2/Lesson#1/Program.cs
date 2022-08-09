@@ -8,10 +8,14 @@ int[] arrey = Console.ReadLine("Введем трехзначное число =
 int n = arrey.Length;
 Console.WriteLine(n);
 */
+/*
 int numb = Convert.ToInt32(Console.ReadLine());
 int[] arrey = {numb};
 int gg = arrey.Length;
 Console.WriteLine(gg);
+*/
 
-
-
+numb = Console.ReadLine();
+arrey = {numb};
+gg = arrey.Length;
+Console.WriteLine(gg);
