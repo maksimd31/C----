@@ -4,5 +4,6 @@ Console.WriteLine("Напишите программу, которая прин�
 int number = new Random().Next(100,999);
 Console.WriteLine($"===> {number}");
 int itogo = number % 100;
+Console.WriteLine($"===> {itogo}");
 int itogo2 = itogo/10;
 Console.WriteLine($"Вторая цыфра числа ==> {itogo2}");
