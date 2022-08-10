@@ -7,3 +7,4 @@ int number = Convert.ToInt32(Console.ReadLine());
 string gg = Convert.ToString(number);
 //Выводим индекс Второго числа, Теперь не важно какое по длине будет число программа будет выдавать всегда второе число.
 Console.WriteLine("Вторая цифра числа: " + gg[1]);
+//По мне самый верный варинт.
