@@ -1,7 +1,7 @@
 ﻿
 Console.WriteLine("Задание №2");
 Console.WriteLine("Напишите программу,которая выводит третью цифру заданного числа или собщает что третьей цыфры нет. ");
-
+Console.WriteLine("Введите трехзначное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
 string gg = Convert.ToString(number);
