@@ -1,4 +1,4 @@
-Ссылк на второе домашнее задание https://github.com/maksimd31/Csharp/tree/master/git/C%20sharp/Homework/Homework№2
+Ссылка на второе домашнее задание https://github.com/maksimd31/Csharp/tree/master/git/C%20sharp/Homework/Homework№2
 # Задание №1
 
 ## Напишите программу, которая принимает на вход трёхзначное число и на выходе показывакет вторую цифру этого числа.
