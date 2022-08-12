@@ -24,10 +24,10 @@ case 4:
 Console.WriteLine("X+, -Y");
 break;
 }
-default:
+default: //команда else в switch
 {
 Console.WriteLine("Таких значений нет");
-break;
+break; //остановка программы при выполнение условия 
 }
 }
 //Решение супер понятное
