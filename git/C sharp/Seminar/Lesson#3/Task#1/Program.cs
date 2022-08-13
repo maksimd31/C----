@@ -21,8 +21,8 @@ int getQuoterFromCoordinate(int x, int y )
     }
     else 
     {
-        Console.ForegroundColor -ConsoleColor.Red;
-        Console.WriteLine($"X и Y Не должны быть равны 0 вы ввели {x} {Y}");
+        //Console.ForegroundColor -ConsoleColor.Red;
+        Console.WriteLine($"X и Y Не должны быть равны 0 вы ввели {x} {y}");
         Console.ResetColor();
     }
     return resault;
@@ -34,4 +34,4 @@ Console.WriteLine("Введите Х: ");
 userX = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите Y: ");
 userY = Convert.ToInt32(Console.ReadLine());
-int quoter = getQuoterFromCoordinate;
+//int quoter = getQuoterFromCoordinate;
