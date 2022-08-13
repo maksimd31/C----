@@ -7,24 +7,29 @@ A (7,-5, 0); B (1,-1,9) -> 11.53
 Console.WriteLine("Задание №2\nНапишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.");
 
 Console.WriteLine("Введите х1 ");
-int x1 = Convert.ToInt32(Console.ReadLine());
+double x1 = Convert.ToDouble(Console.ReadLine());
 
 Console.WriteLine("Введите у1 ");
-int y1 = Convert.ToInt32(Console.ReadLine());
+double y1 = Convert.ToDouble(Console.ReadLine());
 
 Console.WriteLine("Введите z1 ");
-int z1 = Convert.ToInt32(Console.ReadLine());
+double z1 = Convert.ToDouble(Console.ReadLine());
 
 Console.WriteLine("Введите х2 ");
-int x2 = Convert.ToInt32(Console.ReadLine());
+double x2 = Convert.ToDouble(Console.ReadLine());
 
 Console.WriteLine("Введите у2 ");
-int y2 = Convert.ToInt32(Console.ReadLine());
+double y2 = Convert.ToDouble(Console.ReadLine());
 
 Console.WriteLine("Введите z2 ");
-int z2 = Convert.ToInt32(Console.ReadLine());
+double z2 = Convert.ToDouble(Console.ReadLine());
 
 
-double sum = Math.Sqrt((x2-x1)+(y2-y1)(z2-z1));
+double sum = Math.Sqrt(Math.Pow((x2-x1), 2)+ Math.Pow((y2-y1),2)+ Math.Pow((z2-z1),2));
 sum = Math.Round(sum, 2);
 Console.WriteLine(sum);
+/*
+Math.Sqrt() – математическая функция которая извлекает квадратный корень. В аргументных скобках указывается значение числа, из которого нужно извлечь квадратный корень.
+
+Math.Pow() – возведения числа в степень. В аргументных скобках через запятую указываются два аргумента (1-ый аргумент - число, которое возводим в степень, 2-ой – степень, в которую возводим число).
+*/
