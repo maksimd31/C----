@@ -7,7 +7,7 @@
 Console.WriteLine("Введите данные ");
 int N = Convert.ToInt32(Console.ReadLine());
 
-for (int i = 1; i <= N; i++) 
+for (int i = 1; i <= N; i++) // Цикл который выполняет действие умножение до того момента пока i не станет равно N
 {
     int result = i * i;
     if (i == N)
