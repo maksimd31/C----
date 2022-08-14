@@ -3,10 +3,9 @@ string Metod4(int count, string text )
 {
     int i=0; //счетчик 
     string result = string.Empty; // у переменной result строка и объявляем что строка пустая! 
-    while (i<count)// цикл пока i меньше count цикл будет выполнятся 
+    for(int i=0; i<count; i++ )//Цикл for/тип-счетчик/условие/плюсуем на 1(инкремент) 
     {
         result = result + text; //происходит склеивание  
-        i++;
     }
     return result; // останавливаем цикл при достижении цели
 }
