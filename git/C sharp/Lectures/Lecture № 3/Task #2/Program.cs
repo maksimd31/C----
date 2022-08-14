@@ -11,3 +11,4 @@ string Metod4(int count, string text )
 }
 string res = Metod4(10, "qwerty"); //Объявляем метод 
 Console.WriteLine(res); //Выводим метод 
+
