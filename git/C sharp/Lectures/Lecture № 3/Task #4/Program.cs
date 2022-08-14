@@ -19,19 +19,20 @@ string text = "— Я думаю, — сказал князь, улыбаясь,
 
 //тип /название/(аргументы) тип/ название 
 string Replace(string text, char oldValue, char newValue)
-//узнать что такое char
+//char: хранит одиночный символ в кодировке Unicode и занимает 2 байта. Представлен системным типом System.Char. Этому типу соответствуют символьные литералы:
 {
     string result = string.Empty; // тип/название/присвоение = пустая строка 
 
     int length = text.Length;// подчитывает количество символов в строке 
     for (int i=0; i<length; i++) //цикл 
     {
-        if (text[i]==oldValue) result = result + $"{newValue}";
+        if (text[i]==oldValue) result = result + $"{newValue}"; //Если/делаем сравнение/в тексте i = 0 [индекс] сравниваем с oldValue, если условие выполняется происходит присвоение 
         else result = result + $"{text[i]}";
+        //или присвоить к result значение text[i]
 
 
     }
     return result;//возвращает результат 
 }
-string newText = Replace(text, ' ', '|');
+string newText = Replace(text, ' ', '|');//меняем в text пробелы на | 
 Console.WriteLine(newText);
