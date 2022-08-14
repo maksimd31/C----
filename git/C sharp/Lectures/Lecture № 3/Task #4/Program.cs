@@ -18,8 +18,11 @@ string text = "— Я думаю, — сказал князь, улыбаясь,
             + "вы бы взяли приступом согласие прусского короля." + "Вы так красноречивы. Вы дадите мне чаю?"; 
 
 //тип /название/(аргументы) тип/ название 
+//4 вид методов 
 string Replace(string text, char oldValue, char newValue)
-//char: хранит одиночный символ в кодировке Unicode и занимает 2 байта. Представлен системным типом System.Char. Этому типу соответствуют символьные литералы:
+//string Replace(string text, char oldValue(Найти символ), char newValue(Заменить символ))
+
+//char: хранит одиночный символ в кодировке Unicode и занимает 2 байта. Представлен системным типом System.Char. Этому типу соответствуют символьные литералы:(конкретный символ)
 {
     string result = string.Empty; // тип/название/присвоение = пустая строка 
 
@@ -36,3 +39,7 @@ string Replace(string text, char oldValue, char newValue)
 }
 string newText = Replace(text, ' ', '|');//меняем в text пробелы на | 
 Console.WriteLine(newText);
+Console.WriteLine();
+newText = Replace(newText, 'к', 'К');//меняем к маленькую на К большую 
+Console.WriteLine();
+
