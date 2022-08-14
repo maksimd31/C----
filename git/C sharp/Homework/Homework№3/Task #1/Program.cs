@@ -7,8 +7,11 @@
 */
 Console.WriteLine("Задача №1\nНапишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.");
 Console.WriteLine("Введите пятизначное число: ");
+
 int numb = Convert.ToInt32(Console.ReadLine());
+
 string ggg = Convert.ToString(numb);
+
 if (ggg[0] == ggg[4])
 {
     if (ggg[1] == ggg[3])
