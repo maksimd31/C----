@@ -1,23 +1,23 @@
-﻿// Код с семенара дополнить его с записи семенара.
+﻿// Код с семинара дополнить его с записи семинара.
 //1. Напишите программу, которая принимает на вход координаты точки (X и Y), причём X ≠ 0 и Y ≠ 0 и выдаёт номер четверти плоскости, в которой находится эта точка. 
 int getQuoterFromCoordinate(int x, int y )
 {
-    int resault = 0;
+    int result = 0;
     if (x>0 && y<0)
     {
-        resault =1;
+        result =1;
     }
     else if(x<0 && y >0)
     {
-        resault = 2;
+        result = 2;
     }
     else if (x<0 && y < 0)
     {
-        resault =3;
+        result =3;
     }
     else if (x>0 && y < 0)
     {
-        resault =4; 
+        result =4; 
     }
     else 
     {
@@ -25,7 +25,7 @@ int getQuoterFromCoordinate(int x, int y )
         Console.WriteLine($"X и Y Не должны быть равны 0 вы ввели {x} {y}");
         Console.ResetColor();
     }
-    return resault;
+    return result;
 }
 int userX =0;
 int userY = 0;
