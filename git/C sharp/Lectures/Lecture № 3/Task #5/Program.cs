@@ -16,17 +16,17 @@ void PrintArray (int[] array) //Метод/название/(тип[массив
 void SelectionSort(int[] array)
 {
 
-    for (int i = 0; i < array.Length - 1 ; i++)
+    for (int i = 0; i < array.Length - 1 ; i++)// пробежатся по всем элементам массива 
     {
-        int minPosition = i;
-        for (int j = i+1; j < array.Length; j++)
+        int minPosition = i; //минимальная позиция 
+        for (int j = i+1; j < array.Length; j++) 
         {
-            if (array[j] < array[minPosition]) 
+            if (array[j] < array[minPosition])//поиск минимального элемента 
             minPosition = j;
         }
-        int temporary = array[i];
-        array[i] = array[minPosition];
-        array[minPosition] = temporary;
+        int temporary = array[i]; //полжем туда элемент который мы нашли 
+        array[i] = array[minPosition];//
+        array[minPosition] = temporary;// 
     }
 }
 PrintArray(arr);
