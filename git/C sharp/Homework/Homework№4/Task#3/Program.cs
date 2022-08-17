@@ -4,3 +4,17 @@
 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
 6, 1, 33 -> [6, 1, 33]
 */
+
+int[] a = new int[8]; // создали массив из восьми элементов
+
+void RandomArray(int[] array)//Метод подсчета 
+{
+    for (int i = 0; i < a.Length; i++)//цикл прогона через весь массив 
+    {
+        array[i]=new Random().Next(1, 100);
+        Console.Write($"{array[i]} ");
+    }
+}
+
+Console.WriteLine($"Массив из 8 единиц = ");
+RandomArray(a);
