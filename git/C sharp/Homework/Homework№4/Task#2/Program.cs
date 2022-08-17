@@ -22,8 +22,6 @@ int tSumm(int numA)
     }
     return s;
 }
-
 Console.WriteLine($"Сумма цифр {numA}\nРавна = {tSumm(numA)}");
-
 
 
