@@ -24,3 +24,6 @@ int sum = Convert.ToInt32(Math.Pow(numA, numB));
 Console.WriteLine($"Число А = {numA} в натуральной степени B = {numB}\nРавняется = {sum} ");
 ```
 <img width="1065" alt="Homework#1" src="https://user-images.githubusercontent.com/106627508/184919904-31788455-e473-48c3-8223-45bd898e2e9c.png">
+
+
+<img width="1064" alt="Homework#1v2" src="https://user-images.githubusercontent.com/106627508/185114900-e212650e-1eaf-4321-a002-fd07a6214558.png">
