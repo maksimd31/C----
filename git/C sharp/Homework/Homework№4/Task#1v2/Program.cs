@@ -4,7 +4,7 @@
 2, 4 -> 16
 */
 //Решение задачи(возведение в степень)
-Console.Clear();
+Console.Clear(); //Очищаем консоль 
 Console.WriteLine("Задача 25:\nНапишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.");
 
 Console.Write("Введите число А: ");
@@ -13,10 +13,10 @@ int numA = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите число B: ");
 int numB = Convert.ToInt32(Console.ReadLine());
 
-int sum(int numB, int numA)//метод
+int sum(int numA, int numB)//метод
 {
-    int number1 = numA;
-    for(int i = 0; i<numB; i++) 
+    int number1 = numA; //присваиваем numA новую переменную 
+    for(int i = 1; i<numB; i++) // Прокручиваем цикл начиная перемножение с 1, если i меньше numB, и плюсуем +1 каждый круг к i, то numA умножаем на numA пока numB будет больше i. 
     {
         number1 *= numA;
     }
