@@ -56,3 +56,8 @@ Console.WriteLine($"Число А = {numA} в натуральной степе�
 ```
 
 <img width="1064" alt="Homework#1v2" src="https://user-images.githubusercontent.com/106627508/185114900-e212650e-1eaf-4321-a002-fd07a6214558.png">
+
+# Задание №2 
+
+<img width="1070" alt="Homework#2" src="https://user-images.githubusercontent.com/106627508/185178973-00ee6fd7-b7b9-4159-a69f-f192d2aeb48c.png">
+
