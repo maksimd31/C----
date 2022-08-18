@@ -86,3 +86,4 @@ Console.WriteLine($"Сумма цифр {numA}\nРавна = {tSumm(numA)}");
 
 <img width="1070" alt="Homework#2" src="https://user-images.githubusercontent.com/106627508/185178973-00ee6fd7-b7b9-4159-a69f-f192d2aeb48c.png">
 
+# Задание №3
