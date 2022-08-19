@@ -10,8 +10,8 @@ Console.Clear();
 Console.WriteLine("Задача 27:\nНапишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.");
 
 Console.Write("Введите число: ==> ");
-int numA = Convert.ToInt32(Console.ReadLine());
-
+// int numA = Convert.ToInt32(Console.ReadLine());
+int numA = 452;
 int tSumm(int numA) //метод 
 {
     int s = 0; //счетчик+ переменная/ 
