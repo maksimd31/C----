@@ -107,4 +107,8 @@ void RandomArray(int[] array)//Метод подсчета
 
 Console.WriteLine($"Массив из 8 единиц = ");
 RandomArray(a);//применяем метод к массиву `а`
+
+
 ```
+
+<img width="906" alt="Снимок экрана 2022-08-19 в 15 06 06" src="https://user-images.githubusercontent.com/106627508/185615198-e2ea5261-a256-4b1a-8456-49b20d28a147.png">
