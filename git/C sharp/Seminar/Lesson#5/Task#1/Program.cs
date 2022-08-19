@@ -20,8 +20,8 @@ int negativeSum = 0;
 foreach (int i in array) // Для каждого элемента (i) в (array)
 {
     if (i > 0) //сравниваем если i>0 то цифра положительная 
-        positiveSum += i;
+        positiveSum += i; // При нахождения положительного числа(происходит их сложение)
     else
-        negativeSum += i;
+        negativeSum += i;//аналогично первому
 }
 Console.WriteLine($"Сумма положительных = {positiveSum}, а сумма отрицительных = {negativeSum}" );

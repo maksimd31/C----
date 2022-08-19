@@ -15,7 +15,7 @@
             "program": "${workspaceFolder}/git/C sharp/Homework/Homework№4/Task#2/bin/Debug/net6.0/Task#2.dll",
             "args": [],
             "cwd": "${workspaceFolder}/git/C sharp/Homework/Homework№4/Task#2",
-            "console": "internalConsole",
+            "console": "integratedTerminal",
             "stopAtEntry": false
         },
         {
