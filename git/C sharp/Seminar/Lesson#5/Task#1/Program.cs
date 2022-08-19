@@ -4,10 +4,10 @@
 */
 int[] GetArray(int size, int minValue, int maxValue)//Создаем метод/аргументы/(размер/минимальное число/ максимальное число)
 {
-    int[] result = new int[size]; // создаем массив size и кладем в него в переменную result 
+    int[] result = new int[size]; // создаем массив result и кладем в него в переменную size 
     for (int i = 0; i < result.Length; i++) //Пробегаемся по методу (Используем Length для прохода всего массива)
     {
-        result[i] = new Random().Next(minValue, maxValue + 1); //в массив result кладем в i кладем рандомные числа от минимальных до максимальных +1 (Не понял почему +1)
+        result[i] = new Random().Next(minValue, maxValue + 1); //в массив result кладем в i кладем рандомные числа от минимальных до максимальных +1 (метод Next включает первое число не не включает второе)
         Console.Write($"{result[i]} "); //выводим на экран массив 
     }
     return result; //Возвращаем result 
