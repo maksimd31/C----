@@ -86,6 +86,7 @@ int [] GetArray(int size, int minValue, int maxValue)
         Console.Write($"{res[i]} ");
     }
     return res;
+    //создали рандомный массив 
 }
 
 int [] array = GetArray(5, 0, 9);
