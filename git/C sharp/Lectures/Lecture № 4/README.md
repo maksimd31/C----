@@ -1,3 +1,5 @@
+<img width="714" alt="Снимок экрана 2022-08-22 в 17 24 46" src="https://user-images.githubusercontent.com/106627508/185945197-4b38ddec-5133-4c9f-b743-13fcacfa31cb.png">
+
 # Лекция №4 Рекурсия и двумерные
 
 
