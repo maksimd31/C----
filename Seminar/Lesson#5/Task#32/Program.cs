@@ -17,7 +17,7 @@ int[] GetArray(int size, int minValue, int maxValue) // метод массив/
     }
     return result; //возвращаем значение 
 }
-int[] ReverseArray(int[] array) // 
+int[] ReverseArray(int[] array) // Создаем метод разворота массива 
 {   int [] newArray = new int[array.Length];
     for (int i = 0; i < array.Length; i++)
     {
