@@ -298,6 +298,9 @@ PrintArray(matrix);
 
 Для этого определяем какую-то точку, которая находится внутри замкнутого контура.
 
+<img width="349" alt="Снимок экрана 2022-08-23 в 09 08 02" src="https://user-images.githubusercontent.com/106627508/186082854-9597a1f4-e0be-47af-b575-3c874805ed4a.png">
+
+
 После этого нам надо определиться с тем, как мы будем делать обход внутренних точек. Если мы
 попали в точку, и эта точка не закрашена, мы её закрашиваем. Далее определяем правило обхода. В
 моём случае правило такое — сначала идём вверх, потом влево, потом вниз и вправо. Сейчас всё
@@ -305,16 +308,28 @@ PrintArray(matrix);
 
 Итак, мы остановились на точке. Дальше смотрим на точку выше.
 
+<img width="275" alt="Снимок экрана 2022-08-23 в 09 08 50" src="https://user-images.githubusercontent.com/106627508/186082972-4512d7c6-6640-4b2e-b241-c26d5405cb31.png">
+
+
 Если она не закрашена, мы её красим. От неё же смотрим на точку выше. Если она не закрашена,
 красим. И так пока не встретим закрашенную точку.
+
+<img width="273" alt="Снимок экрана 2022-08-23 в 09 09 43" src="https://user-images.githubusercontent.com/106627508/186083105-0c805ec5-0d9d-49b6-b75f-15bf88d8b6b7.png">
+
 
 
 Дальше по правилу обхода смотрим на точку слева. Если бы её можно было закрасить, мы бы
 закрасили. Но в нашем случае снова попадаем на контур. Следующая по порядку точка ниже. Она тоже
 закрашена — не красим. Идём в последнее правое направление. Точка не закрашена — красим.
 
+<img width="273" alt="Снимок экрана 2022-08-23 в 09 10 02" src="https://user-images.githubusercontent.com/106627508/186083140-4c0e0b0d-d84e-467b-be85-67ddaa5f7b0f.png">
+
+
 Затем для текущей точки повторяем все те же действия: идём вверх, если можно, красим, если нельзя
 — не красим. Двигаемся дальше по правилу.
+
+<img width="277" alt="Снимок экрана 2022-08-23 в 09 10 21" src="https://user-images.githubusercontent.com/106627508/186083210-6823dd1b-ad27-4305-b632-8cb5645f74de.png">
+
 
 И так далее. Вся идея закрашивания сводится к простым шагам.
 
@@ -322,27 +337,14 @@ PrintArray(matrix);
 координатами x, y (в данном случае x — позиция строчки, а y — столбца), движение будет выглядеть
 таким образом:
 
+<img width="479" alt="Снимок экрана 2022-08-23 в 09 10 56" src="https://user-images.githubusercontent.com/106627508/186083304-7c143ba4-6402-4247-b6d4-56ad54feec4e.png">
 
-```
-x-1, y
-```
-```
-x, y- 1 x, y x, y+
-```
-```
-x+1, y
-```
+
 Можно двигаться и по диагонали, но тогда придётся проверять дополнительные условия.
 
-```
-x-1, y- 1 x-1, y x-1, y+
-```
-```
-x, y- 1 x, y x, y+
-```
-```
-x+1, y- 1 x+1, y x+1, y+
-```
+<img width="466" alt="Снимок экрана 2022-08-23 в 09 11 17" src="https://user-images.githubusercontent.com/106627508/186083372-d030876d-c4d4-4973-9f65-f9e63469292e.png">
+
+
 Далее мы должны определить порядок действий. Я договариваюсь ходить сначала вверх, потом
 влево, вниз и вправо. Всё ровно так, как на примере с закрашиванием пикселей.
 
@@ -395,21 +397,22 @@ int[,] pic = new int[,]
 ```
 void PrintImage(int[,] image)
 {
-for (int i = 0; i < image.GetLength(0); i++)
-{
-for (int j = 0; j < image.GetLength(1); j++)
-{
-if(image[i,j] == 0) Console.Write($" ");
-else Console.Write($"+");
+    for (int i = 0; i < image.GetLength(0); i++)
+    {
+        for (int j = 0; j < image.GetLength(1); j++)
+        {
+            if(image[i,j] == 0) Console.Write($" ");
+            else Console.Write($"+");
+        }
+        Console.WriteLine();
+    }
 }
-Console.WriteLine();
-}
-}
-```
-```
 PrintImage(pic);
 ```
 Запустим и посмотрим, что получится.
+
+<img width="613" alt="Снимок экрана 2022-08-23 в 09 12 28" src="https://user-images.githubusercontent.com/106627508/186083590-9a0e055f-5286-4429-9503-3a8180715b2d.png">
+
 
 Видим палец вверх. Он не совсем красивый, но ничего страшного — это тонкости шрифтов. Технически
 в настройках можно указать шрифты с фиксированной шириной для символа. Но нас сейчас это не
@@ -426,28 +429,26 @@ col) равен нулю (то есть не закрашен), я буду ег
 ```
 void PrintImage(int[,] image)
 {
-for (int i = 0; i < image.GetLength(0); i++)
-{
-for (int j = 0; j < image.GetLength(1); j++)
-{
-if(image[i,j] == 0) Console.Write($" ");
-else Console.Write($"+");
+    for (int i = 0; i < image.GetLength(0); i++)
+    {
+        for (int j = 0; j < image.GetLength(1); j++)
+        {
+            if(image[i,j] == 0) Console.Write($" ");
+            else Console.Write($"+");
+        }
+        Console.WriteLine();
+    }
 }
-Console.WriteLine();
-}
-}
-
 void FillImage(int row, int col)
 {
-if (pic[row, col] == 0)
-{
-pic[row, col] = 1;
-FillImage(row - 1, col);
-FillImage(row, col - 1);
-FillImage(row + 1, col);
-FillImage(row, col + 1);
-}
-}
+    if (pic[row, col] == 0)
+    {
+        pic[row, col] = 1;
+        FillImage(row - 1, col);
+        FillImage(row, col - 1);
+        FillImage(row + 1, col);
+        FillImage(row, col + 1);
+} }
 PrintImage(pic);
 FillImage(13, 13);
 PrintImage(pic);
@@ -455,11 +456,14 @@ PrintImage(pic);
 Давайте попробуем посмотреть, к чему нас это приведёт. В качестве случайной точки я указал (13, 13).
 Очищу терминал и запущу по новой.
 
+<img width="266" alt="Снимок экрана 2022-08-23 в 09 13 32" src="https://user-images.githubusercontent.com/106627508/186083766-14fb4a55-c1c2-4768-819d-ebe6aa20ff8b.png">
+
+
 Прошу любить и жаловать — один из алгоритмов, позволяющий закрашивать замкнутые области. У
 него есть тонкости: алгоритму нужно много ресурсов. Если вы захотите красить 5К картинку, вас ждут
 неприятности. Но на маленьких изображениях всё хорошо — нужно всего 7 строк кода.
 
-### Рекурсия
+## Рекурсия
 
 Здесь для вас открылась новая сущность — ситуация, при которой метод вызывает сам себя. В
 математике (программирование — это частный случай математики) есть целая область, которая
@@ -496,15 +500,17 @@ PrintImage(pic);
 ```
 int Factorial(int n)
 {
-// 1! = 1
-// 0! = 1
-if(n == 1) return 1;
-else return n * Factorial(n-1);
+    // 1! = 1
+    // 0! = 1
+    if(n == 1) return 1;
+    else return n * Factorial(n-1);
 }
-
 Console.WriteLine(Factorial(3)); // 1 * 2 * 3 = 6
 ```
 Запустим и посмотрим, что получится.
+
+<img width="606" alt="Снимок экрана 2022-08-23 в 09 14 50" src="https://user-images.githubusercontent.com/106627508/186083995-47fa8770-7efb-4094-a91d-3a607932f384.png">
+
 
 
 Получаем 6. Дальше, если попытаемся вычислить 5!, получим 120 — всё правильно.
@@ -515,33 +521,40 @@ Console.WriteLine(Factorial(3)); // 1 * 2 * 3 = 6
 ```
 int Factorial(int n)
 {
-// 1! = 1
-// 0! = 1
-if(n == 1) return 1;
-else return n * Factorial(n-1);
+    // 1! = 1
+    // 0! = 1
+    if(n == 1) return 1;
+    else return n * Factorial(n-1);
 }
 for (int i = 1; i < 40; i++)
 {
-Console.WriteLine(Factorial(i));
+    Console.WriteLine(Factorial(i));
 }
 ```
+
+<img width="616" alt="Снимок экрана 2022-08-23 в 09 15 31" src="https://user-images.githubusercontent.com/106627508/186084104-f25516be-87ad-4a8e-a6bf-c67c6365b135.png">
+
+
 Это связано с переполнением типа. Давайте проверим, до какого значения можем посчитать
 факториал.
+
 
 ```
 int Factorial(int n)
 {
-// 1! = 1
-// 0! = 1
-if(n == 1) return 1;
-else return n * Factorial(n-1);
+    // 1! = 1
+    // 0! = 1
+    if(n == 1) return 1;
+    else return n * Factorial(n-1);
 }
 for (int i = 1; i < 40; i++)
 {
-Console.WriteLine($"{i}! = {Factorial(i)}");
+    Console.WriteLine($"{i}! = {Factorial(i)}");
 }
 ```
 Очистим и запустим терминал. Всё хорошо до 17!.
+
+<img width="611" alt="Снимок экрана 2022-08-23 в 09 16 04" src="https://user-images.githubusercontent.com/106627508/186084224-0d53af75-bfff-49d5-a723-d0e4bdd4906b.png">
 
 
 То есть число 17! попросту не вмещается в тип данных `integer` , поэтому появляется первая ваша задача,
@@ -552,22 +565,26 @@ Console.WriteLine($"{i}! = {Factorial(i)}");
 ```
 double Factorial(int n)
 {
-// 1! = 1
-// 0! = 1
-if(n == 1) return 1;
-else return n * Factorial(n-1);
+    // 1! = 1
+    // 0! = 1
+    if(n == 1) return 1;
+    else return n * Factorial(n-1);
 }
 for (int i = 1; i < 40; i++)
 {
-Console.WriteLine($"{i}! = {Factorial(i)}");
+    Console.WriteLine($"{i}! = {Factorial(i)}");
 }
 ```
+
+<img width="613" alt="Снимок экрана 2022-08-23 в 09 16 39" src="https://user-images.githubusercontent.com/106627508/186084333-332ed482-f080-40be-80c1-0a5a6a9aecf7.png">
+
 
 Видим нормальные значения. E + 29 означает, что получившееся число нужно умножить на 10^29. Это
 достаточно большие числа. Но тип double позволяет их хранить.
 
 
 ## Вычисление чисел Фибоначчи
+**Часто спрашивают на собеседованиях**
 
 Мы посмотрели на простой пример использования рекурсии. Думаю, он понятнее, чем закраска
 картинки. Есть ли ещё какие-то знакомые вам рекурсивные математические функции? Да, например,
@@ -588,27 +605,31 @@ Console.WriteLine($"{i}! = {Factorial(i)}");
 // f(2) = 1
 // f(n) = f(n-1) + f(n-2)
 int Fibonacci(int n)
-if(n == 1 || n == 2) return 1;
-else Fibonacci(n-1) + Fibonacci(n-2);
+18
+{
+    if(n == 1 || n == 2) return 1;
+    else Fibonacci(n-1) + Fibonacci(n-2);
 }
 ```
 Технически всё. Если кого-то смущает наименование, вы знаете, что делать — rename. Можно указать,
 
-##### например, f. Так функция будет выглядеть компактнее. Но я оставлю полное наименование.
+например, f. Так функция будет выглядеть компактнее. Но я оставлю полное наименование.
 
 Дальше посмотрим, как будут считаться некоторые числа Фибоначчи. Покажем первые 10.
 
 ```
 int Fibonacci(int n)
 {
-if(n == 1 || n == 2) return 1;
-else return Fibonacci(n-1) + Fibonacci(n-2);
+    if(n == 1 || n == 2) return 1;
+    else return Fibonacci(n-1) + Fibonacci(n-2);
 }
 for (int i = 1; i < 10; i++)
 {
-Console.WriteLine(Fibonacci(i));
+    Console.WriteLine(Fibonacci(i));
 }
 ```
+<img width="619" alt="Снимок экрана 2022-08-23 в 09 18 16" src="https://user-images.githubusercontent.com/106627508/186084612-07ff94aa-8c0b-418f-839f-a452e20a5ab1.png">
+
 Получаются те самые числа Фибоначчи — каждое равно сумме двух предыдущих.
 
 Есть тонкий момент. По аналогии с факториалом попробуем посчитать первые 50 чисел Фибоначчи так,
@@ -617,12 +638,12 @@ Console.WriteLine(Fibonacci(i));
 ```
 double Fibonacci(int n)
 {
-if(n == 1 || n == 2) return 1;
-else return Fibonacci(n-1) + Fibonacci(n-2);
+    if(n == 1 || n == 2) return 1;
+    else return Fibonacci(n-1) + Fibonacci(n-2);
 }
 for (int i = 1; i < 50; i++)
 {
-Console.WriteLine(Fibonacci(i));
+    Console.WriteLine(Fibonacci(i));
 }
 ```
 Первые числа вылетят в консоль достаточно быстро, а дальше она начнёт работать медленнее.
@@ -632,12 +653,12 @@ Console.WriteLine(Fibonacci(i));
 ```
 double Fibonacci(int n)
 {
-if(n == 1 || n == 2) return 1;
-else return Fibonacci(n-1) + Fibonacci(n-2);
+    if(n == 1 || n == 2) return 1;
+    else return Fibonacci(n-1) + Fibonacci(n-2);
 }
 for (int i = 1; i < 50; i++)
 {
-Console.WriteLine($"f({i}) = {Fibonacci(i)}");
+    Console.WriteLine($"f({i}) = {Fibonacci(i)}");
 }
 ```
 Начиная с сорокового числа значения выводятся очень медленно. С чем это связано, обязательно
@@ -647,7 +668,7 @@ Console.WriteLine($"f({i}) = {Fibonacci(i)}");
 
 
 
-#### Примеры из жизни
+## Примеры из жизни
 
 Вы посмотрели математические примеры использования рекурсии, но есть и житейские. Например,
 если нужно сделать обход какой-то папки, обычной директории на вашем компьютере. В этом случае у
