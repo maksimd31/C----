@@ -13,7 +13,7 @@ int numA = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите число B: ");
 int numB = Convert.ToInt32(Console.ReadLine());
 
-int sum = Convert.ToInt32(Math.Pow(numA, numB)); 
+int sum = Convert.ToInt32(Math.Pow(numA, numB));
 
 Console.WriteLine($"Число А = {numA} в натуральной степени B = {numB}\nРавняется = {sum} ");
 //Math.Pow - функция возведение в степень работает изначально только с значениями double!

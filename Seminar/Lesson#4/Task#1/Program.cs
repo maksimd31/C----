@@ -1,4 +1,5 @@
-﻿Console.Clear();
+﻿//Поиск факториала 
+Console.Clear();
 Console.WriteLine("Введите число: ");
 int num = int.Parse(Console.ReadLine());
 
