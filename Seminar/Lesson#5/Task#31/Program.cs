@@ -24,4 +24,4 @@ foreach (int i in array) // Для каждого элемента (i) в (array
     else
         negativeSum += i;//аналогично первому
 }
-Console.WriteLine($"Сумма положительных = {positiveSum}, а сумма отрицительных = {negativeSum}" );
+Console.WriteLine($"Сумма положительных = {positiveSum}, а сумма отрицательных = {negativeSum}" );
