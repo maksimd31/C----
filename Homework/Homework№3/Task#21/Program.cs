@@ -25,7 +25,7 @@ Console.WriteLine("Введите z2 ");
 double z2 = Convert.ToDouble(Console.ReadLine());
 
 
-double sum = Math.Sqrt(Math.Pow((x2-x1), 2)+ Math.Pow((y2-y1),2)+ Math.Pow((z2-z1),2));
+double sum = Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2) + Math.Pow((z2 - z1), 2));
 sum = Math.Round(sum, 2);
 Console.WriteLine(sum);
 /*

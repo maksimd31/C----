@@ -15,7 +15,7 @@ string ggg = Convert.ToString(numb);
 if (ggg[0] == ggg[4])
 {
     if (ggg[1] == ggg[3])
-    Console.WriteLine($"Число {ggg} является палиндромом");
+        Console.WriteLine($"Число {ggg} является палиндромом");
 }
 else
 {

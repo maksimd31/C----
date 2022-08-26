@@ -18,7 +18,7 @@ int tSumm(int numA) //метод
     while (numA > 0) //цикл который проверяет является ли введенная цифра больше нуля. 
     {
         s = s + numA % 10;
-        numA = numA /10 ;
+        numA = numA / 10;
     }
     return s;
 }
