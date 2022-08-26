@@ -4,7 +4,7 @@
 78 -> третьей цифры нет
 32679 -> 6
 */
-Console.WriteLine("Задание №2");
+Console.WriteLine("Задание №13");
 Console.WriteLine("Напишите программу,которая выводит третью цифру заданного числа или сообщает что третьей цифры нет. ");
 Console.WriteLine("Введите трехзначное число: ");
 int number = Convert.ToInt32(Console.ReadLine());

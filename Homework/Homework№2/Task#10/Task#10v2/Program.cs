@@ -5,7 +5,7 @@
 782 -> 8
 918 -> 1
 */
-Console.WriteLine("Задание №1 v 2");
+Console.WriteLine("Задание №10 v 2");
 Console.WriteLine("Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.");
 int number = new Random().Next(100, 999);
 Console.WriteLine($"===> {number}");
