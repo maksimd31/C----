@@ -22,4 +22,12 @@ double k2 = Convert.ToInt32(Console.ReadLine());
 double x = (-b2 + b1) / (-k1 + k2);
 double y = k2 * x + b2;
 
-Console.WriteLine($"две прямые пересекутся в точке с координатами X: {x}, Y: {y}");
+if (b1==b2) Console.WriteLine("b1 Прямые не пересекаются b2 ");
+if (k1==k2) Console.WriteLine("k1 Прямые не пересекаются k2 ");
+else
+{
+    Console.WriteLine($"две прямые пересекутся в точке с координатами X: {x}, Y: {y}");
+}
+
+
+// Console.WriteLine($"две прямые пересекутся в точке с координатами X: {x}, Y: {y}");
