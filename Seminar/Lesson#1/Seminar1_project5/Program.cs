@@ -7,14 +7,14 @@
 int number = new int();
 Console.WriteLine("Введите трехзначное число");
 number = Convert.ToInt32(Console.ReadLine());
-if (number>99 && number < 1000)
+if (number > 99 && number < 1000)
 {
-    Console.WriteLine($"Последняя цифра вашего числа = {number%10}");
+    Console.WriteLine($"Последняя цифра вашего числа = {number % 10}");
 
 }
 else
 {
-   Console.WriteLine("Вы ввели НЕ трехзначное число");  
+    Console.WriteLine("Вы ввели НЕ трехзначное число");
 }
 /*
 Console.WriteLine("введите трехзначное число");

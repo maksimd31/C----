@@ -10,46 +10,46 @@ dayNumber = Convert.ToInt32(Console.ReadLine());
 
 if (dayNumber == 1)
 {
-   Console.WriteLine("Первый день недели - это понедельник"); 
+    Console.WriteLine("Первый день недели - это понедельник");
 }
 
 else if (dayNumber == 2)
 {
-   Console.WriteLine("Второй день недели - это вторник"); 
+    Console.WriteLine("Второй день недели - это вторник");
 }
 
 else if (dayNumber == 3)
 {
-   Console.WriteLine("Третий день недели - это среда"); 
+    Console.WriteLine("Третий день недели - это среда");
 }
 
 else if (dayNumber == 4)
 {
-   Console.WriteLine("Четвертый день недели - это четверг"); 
+    Console.WriteLine("Четвертый день недели - это четверг");
 }
 
 else if (dayNumber == 5)
 {
-   Console.WriteLine("Пятый день недели - это пятница"); 
+    Console.WriteLine("Пятый день недели - это пятница");
 }
 
 else if (dayNumber == 6)
 {
-   Console.WriteLine("Шестой день недели - это суббота"); 
+    Console.WriteLine("Шестой день недели - это суббота");
 }
 
 else if (dayNumber == 7)
 {
-   Console.WriteLine("Седьмой день недели - это воскресенье"); 
+    Console.WriteLine("Седьмой день недели - это воскресенье");
 }
 
 else
 {
-   Console.WriteLine("Такого дня недели не существует"); 
+    Console.WriteLine("Такого дня недели не существует");
 }
 
 /*
-или с истользоваанием switch
+или с использованием switch
 Console.WriteLine("Введите число: " );
 switch 
 (Convert.ToInt32(Console.ReadLine()))
@@ -70,13 +70,13 @@ switch
   Console.WriteLine("пятница " );    
   break;    
   case 6:     
-  Console.WriteLine("субота" );     
+  Console.WriteLine("суббота" );     
   break;    
   case 7:    
   Console.WriteLine("воскресенье" );    
   break;    
-  default: //Введеные числа вне диапазона.   
-  Console.WriteLine("такаго нет " );    
-  break; // конец цыкла 
+  default: //Введенные числа вне диапазона.   
+  Console.WriteLine("такого нет " );    
+  break; // конец цикла 
 }
 */

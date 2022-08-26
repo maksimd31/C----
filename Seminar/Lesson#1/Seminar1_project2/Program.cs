@@ -5,7 +5,7 @@ a = 2 b = 10 -> нет
 a = 9; b = -3 -> нет 
 a = -3 b = 9 -> да
 */
-//Обявление типа переменых 
+//Объявление типа переменных 
 int userNumberFirst = new int();
 int userNumberSecond = new int();
 //Консоль ввода 
@@ -15,7 +15,7 @@ userNumberFirst = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите второе число: ");
 userNumberSecond = Convert.ToInt32(Console.ReadLine());
 //Условие if (первое число возводим в степень и сравниваем с вторым )
-if(userNumberFirst * userNumberFirst == userNumberSecond)
+if (userNumberFirst * userNumberFirst == userNumberSecond)
 {
     Console.WriteLine($"Число {userNumberSecond} является квадратом числа {userNumberFirst}");
 }

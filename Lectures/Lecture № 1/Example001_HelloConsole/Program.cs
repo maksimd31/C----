@@ -1,4 +1,5 @@
-﻿Console.WriteLine("Введите ваше имя");
+﻿//Example#1 
+Console.WriteLine("Введите ваше имя");
 string username = Console.ReadLine();
 //Строка/Переменная/= присвоение/Ввод текста пользователем
 Console.WriteLine("Привет, "); //промежуточная 
