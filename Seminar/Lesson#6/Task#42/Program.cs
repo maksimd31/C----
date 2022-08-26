@@ -8,11 +8,12 @@
 
 
 void DecimalToBinary(int decimalDigit)
-{   int result = 0;
-    while(decimalDigit%10!=0)
+{
+    int result = 0;
+    while (decimalDigit % 10 != 0)
     {
-        result = decimalDigit%2;
-        decimalDigit = decimalDigit/2;
+        result = decimalDigit % 2;
+        decimalDigit = decimalDigit / 2;
         Console.Write($"{result} ");
     }
 }

@@ -11,18 +11,19 @@ int[] GetArray(int size, int minValue, int maxValue)
     }
     return result;
 }
-int [] MakeNewArray(int [] array)
-{int [] result = new int [array.Length];
-    for (int i =0; i<array.Length; i++)
+int[] MakeNewArray(int[] array)
+{
+    int[] result = new int[array.Length];
+    for (int i = 0; i < array.Length; i++)
     {
-        result[i]=array[i];
+        result[i] = array[i];
         Console.Write($"{result[i]} ");
     }
     return result;
 }
 
-int [] array = GetArray(6,1,56);
+int[] array = GetArray(6, 1, 56);
 Console.WriteLine();
-int [] newArray = MakeNewArray(array);
+int[] newArray = MakeNewArray(array);
 Console.WriteLine();
 Console.WriteLine(String.Join(" ", newArray));

@@ -4,7 +4,7 @@
 теорема о неравенстве треугольника: каждая сторона треугольника меньше суммы двух других сторон
 */
 
-void IsATriangle(int a, int b, int c)
+void IsATriangle(int a, int b, int c)//метод 3 аргумента int 
 {
     if (a < (b + c) && b < (a + c) && c < (b + c))
     {
