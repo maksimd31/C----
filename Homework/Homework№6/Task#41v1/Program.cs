@@ -6,6 +6,7 @@
 */
 
 Console.Clear();
+
 Console.Write("Введи число М : ");
 int m = Convert.ToInt32(Console.ReadLine());
 int[] result = new int[m]; //создаем массив с клавиатуры пользователя 
