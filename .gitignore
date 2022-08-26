@@ -399,3 +399,4 @@ FodyWeavers.xsd
 # Свой игнор. 
 # не знаю что за файл
 *.DS_Store 
+*.vscode
