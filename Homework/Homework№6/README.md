@@ -81,6 +81,7 @@ Console.WriteLine($"Введено чисел больше 0: {count}"); // вы
 
 Ответ в задаче 
 ```
+
 Console.Clear();
 
 Console.Write("введите значение b1: ");
@@ -98,14 +99,32 @@ double k2 = Convert.ToInt32(Console.ReadLine());
 double x = (-b2 + b1) / (-k1 + k2);
 double y = k2 * x + b2;
 
-if (b1==b2) Console.WriteLine("b1 Прямые не пересекаются b2 ");
-if (k1==k2) Console.WriteLine("k1 Прямые не пересекаются k2 ");
-else
+while (b1 > 0)
 {
-    Console.WriteLine($"две прямые пересекутся в точке с координатами X: {x}, Y: {y}");
+    if (b1 == b2)
+    {
+        Console.WriteLine("b1 Прямые не пересекаются b2 ");
+        
+    }
+    else
+    {
+        Console.WriteLine($"две прямые пересекутся в точке с координатами X: {x}, Y: {y}");
+        break;
+    }
+    if (k1 == k2)
+    {
+        Console.WriteLine("k1 Прямые не пересекаются k2 ");
+        break;
+    }
+    else
+    {
+        Console.WriteLine($"две прямые пересекутся в точке с координатами X: {x}, Y: {y}");
+        break;
+    }
 }
 
 
 // Console.WriteLine($"две прямые пересекутся в точке с координатами X: {x}, Y: {y}");
+
 
 ```
