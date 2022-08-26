@@ -20,9 +20,9 @@ Random(arr);
 void Sum(int[] array) //метод Sum 
 {
     int sum1 = 0; //счетчик 
-    for (int i = 1; i < arr.Length; i = i+2) //цикл прохода по элементам массива(но в конце +2) 
+    for (int i = 1; i < arr.Length; i = i + 2) //цикл прохода по элементам массива(но в конце +2) 
     {
-        sum1 = sum1 + arr[i]; 
+        sum1 = sum1 + arr[i];
     }
     Console.WriteLine($"Сумма элементов с нечетным индексом равна: {sum1}");
 }
