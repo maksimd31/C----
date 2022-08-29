@@ -5,6 +5,8 @@
 // 8 7,8 -7,1 9
 Console.Clear();
 
+
+
 //Если матрица 6 строк и 8 столбцов то array.GetLength(0) вернёт 6 а array.GetLength(1) вернёт 8
 void FillArrayRandom(double[,] array) //функция рандомайзера 
 {
