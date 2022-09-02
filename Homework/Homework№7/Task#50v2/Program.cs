@@ -4,8 +4,10 @@
 // 5 9 2 3
 // 8 4 2 4
 // 17 -> такого числа в массиве нет
-
+Console.Clear();
 //Задаем случайное количество строк и столбцов (для интереса)
+Console.WriteLine("Массив рандома");
+
 int rows = new Random().Next(1,10);
 int columns = new Random().Next(1,10);
 
@@ -13,23 +15,25 @@ int columns = new Random().Next(1,10);
 int[,] array = GetArray(rows, columns, 0, 20);
 PrintArray(array);
 
-Console.WriteLine("Введите номер строки искомого элемента массива:");
-int rowNumber = Convert.ToInt32(Console.ReadLine());
+Console.Write("Задача 50. Напишите программу, которая на вход принимает позиции элемента в двумерном массиве, и возвращает значение этого элемента или же указание, что такого элемента нет.(на вход именно поступает позиция элемента, можете разбить на две переменные или прописать в одну строку и конвертировать в два числа, комментарии в конце семинара по этой задаче)");
 
-Console.WriteLine("Введите номер столбца искомого элемента массива:");
-int columnNumber = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите Введите n: ");
+int n = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Введите Введите m: ");
+int m = Convert.ToInt32(Console.ReadLine());
 
 //Применяем метод по нахождению элемента
-int result = GetItem(array, rowNumber, columnNumber);
+int result = GetItem(array, n, m);
 //Не забываем, что индексы начинаются с нуля
 //Выводим результат
 if(result >= 0)
     {
-        Console.WriteLine($"Элемент с индексом ({rowNumber},{columnNumber}) равен {array[rowNumber,columnNumber]}");
+        Console.WriteLine($"Элемент с индексом ({n},{m}) равен {array[n,m]}");
     }
     else
     {
-        Console.WriteLine($"Элемента с индексом ({rowNumber},{columnNumber}) не существует в указанном выше массиве");
+        Console.WriteLine($"Элемента с индексом ({n},{m}) не существует в указанном выше массиве");
     }
 
 //Задаем метод для заполнения массива случайными числами 
