@@ -27,47 +27,47 @@ int minSumLine = 0;
 int sumLin = SumElements(array, 0);
 for (int i = 1; i < array.GetLength(0); i++)
 {
-  int tempSumLine = SumElements(array, i);
-  if (sumLin > tempSumLine)
-  {
-    sumLin = tempSumLine;
-    minSumLine = i;
-  }
+    int tempSumLine = SumElements(array, i);
+    if (sumLin > tempSumLine)
+    {
+        sumLin = tempSumLine;
+        minSumLine = i;
+    }
 }
 
-Console.WriteLine($"\n{minSumLine+1} - строка с наименьшей суммой ({sumLin}) элементов ");
+Console.WriteLine($"\n{minSumLine + 1} - строка с наименьшей суммой ({sumLin}) элементов ");
 
 
 int SumElements(int[,] array, int i)
 {
-  int sumLine = array[i,0];
-  for (int j = 1; j < array.GetLength(1); j++)
-  {
-    sumLine += array[i,j];
-  }
-  return sumLine;
+    int sumLine = array[i, 0];
+    for (int j = 1; j < array.GetLength(1); j++)
+    {
+        sumLine += array[i, j];
+    }
+    return sumLine;
 }
 
 
 void CArray(int[,] array)
 {
-  for (int i = 0; i < array.GetLength(0); i++)
-  {
-    for (int j = 0; j < array.GetLength(1); j++)
+    for (int i = 0; i < array.GetLength(0); i++)
     {
-      array[i, j] = new Random().Next(range);
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            array[i, j] = new Random().Next(range);
+        }
     }
-  }
 }
 
-void WArray (int[,] array)
+void WArray(int[,] array)
 {
-  for (int i = 0; i < array.GetLength(0); i++)
-  {
-    for (int j = 0; j < array.GetLength(1); j++)
+    for (int i = 0; i < array.GetLength(0); i++)
     {
-      Console.Write(array[i,j] + " ");
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            Console.Write(array[i, j] + " ");
+        }
+        Console.WriteLine();
     }
-    Console.WriteLine();
-  }
 }
