@@ -1,6 +1,7 @@
 ﻿// Задача 66: Задайте значения M и N. Напишите программу, которая найдёт сумму чётных чисел натуральных элементов в промежутке от M до N.
 // M = 1; N = 15 -> 56
 // M = 4; N = 8. -> 18
+
 Console.Clear();
 Console.WriteLine($"Задача 66: Задайте значения M и N. Напишите программу, которая найдёт сумму натуральных элементов в промежутке от M до N");
 int m = InputNumbers("Введите m: ");
@@ -26,7 +27,7 @@ void PrintSumm(int m, int n, int summ)
   PrintSumm(m, n - 1, summ);
 }
 
-int InputNumbers(string input) 
+int InputNumbers(string input) //метод приобразование числа 
 {
   Console.Write(input);
   int output = Convert.ToInt32(Console.ReadLine());

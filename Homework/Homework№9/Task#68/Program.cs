@@ -16,7 +16,7 @@ int Ack(int m, int n)
   else return Ack(m - 1, Ack(m, n - 1));
 }
 
-int InputNumbers(string input) 
+int InputNumbers(string input) //метод приобразования числа 
 {
   Console.Write(input);
   int output = Convert.ToInt32(Console.ReadLine());
